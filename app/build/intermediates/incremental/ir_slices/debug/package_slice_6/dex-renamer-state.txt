@@ -1,0 +1,4 @@
+#Sat Dec 01 18:41:00 IST 2018
+base.0=/home/farith/work/Movie App/MovieApp/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

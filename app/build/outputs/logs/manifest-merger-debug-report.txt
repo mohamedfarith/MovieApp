@@ -1,0 +1,196 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/farith/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/75bd75df10cc805f3f21562d83689743/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d24b816d492be128101acff565b838a6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ee2ec0b74b1a72c1e1fcbd17538c9006/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/bb42a22f1ef136271a39fda54820c2fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fc48b94c6e49f267d0f1ed4f909fa2c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/765d8f78434896191c8db139e1654169/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/455d63413bc594fe355bfdb2f0c3b621/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/07a56dd1daf4c5a0222e0b352d080cf0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/ec3a528ffdb93057b9382e8b17335ef4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/463df8f1d1e104a71dce59bf5f5a58ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/ef2a130907cfaeb214a2585472334116/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/3ba2f9ab9542c2685237467e00639d24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/41f192ec0e13eaec7a61f546d3f99420/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fd140dd83dc371cbcc27c184294a70b5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/97cf897b6e83681e19f5c6d794c4dab8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ec99757152930dd22417cf12c6211e1c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8ffc5576c50e02b066e511f22460358/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a300e6711f8a7c561f77e2b873442e63/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/32826bbc112dc88162f759a76ab2a728/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f5395f60014c1082ab4a175b9bf6bfc1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f67a3c9cf854f59e037c2ab4e6fc6b07/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2520473eacd922a9d90857f58c6cdf39/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/41015d638121f42660b17e1c84eabada/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/afa9f85a863a3127461207ddbdfa4dfa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/484c577a54b4bb1e7f8444e3d8d547de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/63b1406ebd0d8d181af1f53e07e94176/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/decac7e910a170da85999b79e1dbb27f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5eb3169d8785a93b95954cd741f0bfd6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/403ced7be0f2ae471e7496d6a0dff454/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9c4616247b01a46885436eab4f96b0c8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/5cdc393915f68e891b82a6869818d2bf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/059aa9b8a6ba9fc18b29710a5f399a0c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/210172947949110f99569bb321f496a8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.0] /home/farith/.gradle/caches/transforms-1/files-1.1/soloader-0.5.0.aar/ffec1c0501bc199f18d6a268aa9c52e0/AndroidManifest.xml:2:1-13:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:6:5-83
+	android:name
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support:design:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/farith/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/75bd75df10cc805f3f21562d83689743/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/farith/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/75bd75df10cc805f3f21562d83689743/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a300e6711f8a7c561f77e2b873442e63/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a300e6711f8a7c561f77e2b873442e63/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.5.0] /home/farith/.gradle/caches/transforms-1/files-1.1/soloader-0.5.0.aar/ffec1c0501bc199f18d6a268aa9c52e0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.0] /home/farith/.gradle/caches/transforms-1/files-1.1/soloader-0.5.0.aar/ffec1c0501bc199f18d6a268aa9c52e0/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.example.farith.movieapp.MainActivity
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/farith/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/75bd75df10cc805f3f21562d83689743/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/farith/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/75bd75df10cc805f3f21562d83689743/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d24b816d492be128101acff565b838a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d24b816d492be128101acff565b838a6/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ee2ec0b74b1a72c1e1fcbd17538c9006/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ee2ec0b74b1a72c1e1fcbd17538c9006/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/bb42a22f1ef136271a39fda54820c2fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/bb42a22f1ef136271a39fda54820c2fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fc48b94c6e49f267d0f1ed4f909fa2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8fc48b94c6e49f267d0f1ed4f909fa2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/765d8f78434896191c8db139e1654169/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/765d8f78434896191c8db139e1654169/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/455d63413bc594fe355bfdb2f0c3b621/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/455d63413bc594fe355bfdb2f0c3b621/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/07a56dd1daf4c5a0222e0b352d080cf0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/07a56dd1daf4c5a0222e0b352d080cf0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/ec3a528ffdb93057b9382e8b17335ef4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/ec3a528ffdb93057b9382e8b17335ef4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/463df8f1d1e104a71dce59bf5f5a58ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/463df8f1d1e104a71dce59bf5f5a58ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/ef2a130907cfaeb214a2585472334116/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/ef2a130907cfaeb214a2585472334116/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/3ba2f9ab9542c2685237467e00639d24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/3ba2f9ab9542c2685237467e00639d24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/41f192ec0e13eaec7a61f546d3f99420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/41f192ec0e13eaec7a61f546d3f99420/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fd140dd83dc371cbcc27c184294a70b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fd140dd83dc371cbcc27c184294a70b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/97cf897b6e83681e19f5c6d794c4dab8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/97cf897b6e83681e19f5c6d794c4dab8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ec99757152930dd22417cf12c6211e1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ec99757152930dd22417cf12c6211e1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8ffc5576c50e02b066e511f22460358/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d8ffc5576c50e02b066e511f22460358/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a300e6711f8a7c561f77e2b873442e63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a300e6711f8a7c561f77e2b873442e63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/32826bbc112dc88162f759a76ab2a728/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/32826bbc112dc88162f759a76ab2a728/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f5395f60014c1082ab4a175b9bf6bfc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/f5395f60014c1082ab4a175b9bf6bfc1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f67a3c9cf854f59e037c2ab4e6fc6b07/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f67a3c9cf854f59e037c2ab4e6fc6b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2520473eacd922a9d90857f58c6cdf39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2520473eacd922a9d90857f58c6cdf39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/41015d638121f42660b17e1c84eabada/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/41015d638121f42660b17e1c84eabada/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/afa9f85a863a3127461207ddbdfa4dfa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/afa9f85a863a3127461207ddbdfa4dfa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/484c577a54b4bb1e7f8444e3d8d547de/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/484c577a54b4bb1e7f8444e3d8d547de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/63b1406ebd0d8d181af1f53e07e94176/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/farith/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/63b1406ebd0d8d181af1f53e07e94176/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/decac7e910a170da85999b79e1dbb27f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/decac7e910a170da85999b79e1dbb27f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5eb3169d8785a93b95954cd741f0bfd6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5eb3169d8785a93b95954cd741f0bfd6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/403ced7be0f2ae471e7496d6a0dff454/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/farith/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/403ced7be0f2ae471e7496d6a0dff454/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9c4616247b01a46885436eab4f96b0c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9c4616247b01a46885436eab4f96b0c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/5cdc393915f68e891b82a6869818d2bf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/5cdc393915f68e891b82a6869818d2bf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/059aa9b8a6ba9fc18b29710a5f399a0c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/059aa9b8a6ba9fc18b29710a5f399a0c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/210172947949110f99569bb321f496a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/farith/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/210172947949110f99569bb321f496a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.0] /home/farith/.gradle/caches/transforms-1/files-1.1/soloader-0.5.0.aar/ffec1c0501bc199f18d6a268aa9c52e0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.0] /home/farith/.gradle/caches/transforms-1/files-1.1/soloader-0.5.0.aar/ffec1c0501bc199f18d6a268aa9c52e0/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/farith/work/Movie App/MovieApp/app/src/main/AndroidManifest.xml
