@@ -92,12 +92,12 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/color_mtrl_fab_ripple_color.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/color/mtrl_fab_ripple_color.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/color_mtrl_fab_ripple_color.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/color/mtrl_fab_ripple_color.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -120,16 +120,16 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator-v21/design_appbar_state_list_animator.xml"
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/drawable-mdpi-v4/design_ic_visibility.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator-v21/design_appbar_state_list_animator.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -140,12 +140,12 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/drawable-v21/notification_action_background.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
@@ -164,12 +164,12 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
@@ -208,28 +208,28 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/layout-v16/notification_template_custom_big.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/layout-v16/notification_template_custom_big.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -296,24 +296,24 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator/mtrl_chip_state_list_anim.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator_mtrl_btn_state_list_anim.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator/mtrl_btn_state_list_anim.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/animator_mtrl_btn_state_list_anim.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
@@ -324,12 +324,12 @@
         "source": "/home/farith/work/Movie App/MovieApp/app/src/main/res/layout/movie_recycler_view.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/layout/design_navigation_item.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ae06a23caca89ad2a82c4f45680f5eeb/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1ee29a1d522e18fbdd115867a39baf97/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -352,12 +352,12 @@
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
-        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/color/abc_search_url_text.xml"
-    },
-    {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
+        "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
@@ -1874,6 +1874,10 @@
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/home/farith/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9017021967d044677d5e09fa04f7447e/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/layout_activity_movie_description.xml.flat",
+        "source": "/home/farith/work/Movie App/MovieApp/app/src/main/res/layout/activity_movie_description.xml"
     },
     {
         "merged": "/home/farith/work/Movie App/MovieApp/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",

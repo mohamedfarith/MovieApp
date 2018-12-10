@@ -1,37 +1,38 @@
 package com.example.farith.movieapp.ModelClasses;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class MovieDetails {
+public class MovieDetails implements Serializable {
     String voteCount;
     String id;
     String video;
-    String voteverage;
+    String vote_average;
     String title;
     String popularity;
     String poster_path;
     String originalLanguage;
     String originalTitle;
     List<String> genreId;
-    String backDropPath;
+    String backdrop_path;
     String adult;
-    String overView;
+    String overview;
     String releaseDate;
 
-    public MovieDetails(String voteCount, String id, String video, String voteverage, String title, String popularity, String poster_path, String originalLanguage, String originalTitle, List<String> genreId, String backDropPath, String adult, String overView,String releaseDate) {
+    public MovieDetails(String voteCount, String id, String video, String vote_average, String title, String popularity, String poster_path, String originalLanguage, String originalTitle, List<String> genreId, String backDropPath, String adult, String overview,String releaseDate) {
         this.voteCount = voteCount;
         this.id = id;
         this.video = video;
-        this.voteverage = voteverage;
+        this.vote_average = vote_average;
         this.title = title;
         this.popularity = popularity;
         this.poster_path = poster_path;
         this.originalLanguage = originalLanguage;
         this.originalTitle = originalTitle;
         this.genreId = genreId;
-        this.backDropPath = backDropPath;
+        this.backdrop_path = backDropPath;
         this.adult = adult;
-        this.overView = overView;
+        this.overview = overview;
         this.releaseDate=releaseDate;
     }
 
@@ -48,7 +49,7 @@ public class MovieDetails {
     }
 
     public String getVoteverage() {
-        return voteverage;
+        return vote_average;
     }
 
     public String getTitle() {
@@ -76,15 +77,15 @@ public class MovieDetails {
     }
 
     public String getBackDropPath() {
-        return backDropPath;
+        return backdrop_path;
     }
 
     public String getAdult() {
         return adult;
     }
 
-    public String getOverView() {
-        return overView;
+    public String getOverview() {
+        return overview;
     }
     public String getReleaseDate() {
         return releaseDate;
@@ -102,8 +103,8 @@ public class MovieDetails {
         this.video = video;
     }
 
-    public void setVoteverage(String voteverage) {
-        this.voteverage = voteverage;
+    public void setVoteverage(String vote_average) {
+        this.vote_average = vote_average;
     }
 
     public void setTitle(String title) {
@@ -130,16 +131,16 @@ public class MovieDetails {
         this.genreId = genreId;
     }
 
-    public void setBackDropPath(String backDropPath) {
-        this.backDropPath = backDropPath;
+    public void setBackDropPath(String backdrop_path) {
+        this.backdrop_path = backdrop_path;
     }
 
     public void setAdult(String adult) {
         this.adult = adult;
     }
 
-    public void setOverView(String overView) {
-        this.overView = overView;
+    public void setOverview(String overview) {
+        this.overview = overview;
     }
 
     public void setReleaseDate(String releaseDate) {

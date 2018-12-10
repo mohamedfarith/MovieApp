@@ -5,7 +5,6 @@ import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView movieListView;
     Context context;
     ArrayList<String> imageURL = new ArrayList<>();
+ ArrayList<MovieDetails> movieDetailsArrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         movieListView = findViewById(R.id.movie_list_view);
         progressBar = findViewById(R.id.progress_bar);
         progressBar.getIndeterminateDrawable()
-                .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN );
+                .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.setVisibility(View.VISIBLE);
         if (isNetworkAvailable()) {
             getDataFromApi();
@@ -60,14 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    //check network connection
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
-
+    //making network cll to the movie db api
     public void getDataFromApi() {
         Retrofit retrofit = new Retrofit.Builder().baseUrl(MovieApi.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
@@ -97,13 +97,13 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < movies.getResults().size(); i++) {
             Log.d(TAG, "fetchMovieDetails: ");
             movieDetails = movies.getResults().get(i);
-            title.add(movieDetails.getTitle());
-            imageURL.add("https://image.tmdb.org/t/p/w500"+movieDetails.getPosterPath());
+            movieDetailsArrayList.add(movieDetails);
+            Log.d(TAG, "fetchMovieDetails: "+movieDetails.getBackDropPath());
             Log.d(TAG, "fetchMovieDetails: " + title.get(i));
-            Log.d(TAG, "fetchMovieDetails: "+imageURL.get(i));
+            Log.d(TAG, "fetchMovieDetails: " + imageURL.get(i));
         }
         progressBar.setVisibility(View.INVISIBLE);
         movieListView.setLayoutManager(new LinearLayoutManager(this));
-        movieListView.setAdapter(new MovieListAdapter(title,imageURL));
+        movieListView.setAdapter(new MovieListAdapter(context,movieDetailsArrayList));
     }
 }

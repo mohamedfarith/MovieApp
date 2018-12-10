@@ -722,6 +722,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color textBlack
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -1086,6 +1087,7 @@ id all
 id always
 id async
 id auto
+id back_drop_image
 id barrier
 id beginning
 id blocking
@@ -1163,9 +1165,11 @@ id masked
 id message
 id middle
 id mini
+id movie_description
 id movie_img
 id movie_list_view
 id movie_name
+id movie_title
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1188,6 +1192,7 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id rating
 id right
 id right_icon
 id right_side
@@ -1258,6 +1263,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_description
+id txt_rating
 id uniform
 id unlabeled
 id up
@@ -1315,6 +1322,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_movie_description
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1391,15 +1399,20 @@ string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string movie_description
+string movie_title
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string rating
+string rating_txt
 string search_menu_title
 string status_bar_notification_info_overflow
 string text_view
+string textview
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
