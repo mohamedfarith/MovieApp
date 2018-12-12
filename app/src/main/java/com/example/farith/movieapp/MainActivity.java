@@ -94,14 +94,17 @@ public class MainActivity extends AppCompatActivity {
 
     //getting the values of the response from api
     public void fetchMovieDetails() {
-        for (int i = 0; i < movies.getResults().size(); i++) {
+        try{
+            int size = movies.getResults().size();
+        for (int i = 0; i < size; i++) {
             Log.d(TAG, "fetchMovieDetails: ");
             movieDetails = movies.getResults().get(i);
             movieDetailsArrayList.add(movieDetails);
-            Log.d(TAG, "fetchMovieDetails: "+movieDetails.getBackDropPath());
-            Log.d(TAG, "fetchMovieDetails: " + title.get(i));
-            Log.d(TAG, "fetchMovieDetails: " + imageURL.get(i));
-        }
+            Log.d(TAG, "fetchMovieDetails: "+movieDetails.getBackDropPath().toString());
+            }
+        }catch (Exception e){
+            Snackbar.make(constraintLayout, "Something went Wrong", Snackbar.LENGTH_LONG).show();
+            }
         progressBar.setVisibility(View.INVISIBLE);
         movieListView.setLayoutManager(new LinearLayoutManager(this));
         movieListView.setAdapter(new MovieListAdapter(context,movieDetailsArrayList));
