@@ -69,6 +69,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
                 v.getContext().startActivity(intent);
             }
         });
+
+        //Load more data when the adapter reaches the bottom of the list
+        if(viewHolder.getAdapterPosition()==movieDetailsArrayList.size()-1){
+            Log.d(TAG, "onBindViewHolder: bottom reached");
+
+        }
     }
 
     @Override
