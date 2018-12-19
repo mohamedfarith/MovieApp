@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> title = new ArrayList<>();
     Movies movies;
     MovieDetails movieDetails;
-    ProgressBar progressBar;
+    ProgressBar progressBar,loadMorePrgressbar;
     RecyclerView movieListView;
     Context context;
     ArrayList<MovieDetails> movieDetailsArrayList = new ArrayList<>();
@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         constraintLayout = findViewById(R.id.constraint_layout);
         movieListView = findViewById(R.id.movie_list_view);
         progressBar = findViewById(R.id.progress_bar);
+        loadMorePrgressbar = findViewById(R.id.load_more_progressbar);
+        loadMorePrgressbar.getIndeterminateDrawable()
+                .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.getIndeterminateDrawable()
                 .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.setVisibility(View.VISIBLE);
@@ -98,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d(TAG, "into movies obj: " + page);
                     fetchMovieDetails();
                     progressBar.setVisibility(View.INVISIBLE);
+                    loadMorePrgressbar.setVisibility(View.GONE);
                 }
 
                 movieListView.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -119,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                         if (dy > 0) {
                             if (isScrolling) {
                                 if (visibleItemCount + pastVisibleItems == totalItemConut) {
-                                    progressBar.setVisibility(View.VISIBLE);
+                                    loadMorePrgressbar.setVisibility(View.VISIBLE);
                                     getDataFromApi(pageNumber);
                                     isScrolling = false;
                                 }
