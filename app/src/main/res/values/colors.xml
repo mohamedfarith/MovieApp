@@ -6,4 +6,5 @@
     <color name="textBlack">#767e80</color>
     <color name="backgroundWhite">#ffffff</color>
     <color name="heartRed">#e70808</color>
+    <color name="collapsedColour">#688dc1</color>
 </resources>

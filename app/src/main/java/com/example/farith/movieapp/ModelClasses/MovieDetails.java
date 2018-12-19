@@ -17,9 +17,9 @@ public class MovieDetails implements Serializable {
     String backdrop_path;
     String adult;
     String overview;
-    String releaseDate;
+    String release_date;
 
-    public MovieDetails(String voteCount, String id, String video, String vote_average, String title, String popularity, String poster_path, String originalLanguage, String originalTitle, List<String> genreId, String backDropPath, String adult, String overview,String releaseDate) {
+    public MovieDetails(String voteCount, String id, String video, String vote_average, String title, String popularity, String poster_path, String originalLanguage, String originalTitle, List<String> genreId, String backDropPath, String adult, String overview,String release_date) {
         this.voteCount = voteCount;
         this.id = id;
         this.video = video;
@@ -33,7 +33,7 @@ public class MovieDetails implements Serializable {
         this.backdrop_path = backDropPath;
         this.adult = adult;
         this.overview = overview;
-        this.releaseDate=releaseDate;
+        this.release_date=release_date;
     }
 
     public String getVoteCount() {
@@ -88,7 +88,7 @@ public class MovieDetails implements Serializable {
         return overview;
     }
     public String getReleaseDate() {
-        return releaseDate;
+        return release_date;
     }
 
     public void setVoteCount(String voteCount) {
@@ -143,8 +143,8 @@ public class MovieDetails implements Serializable {
         this.overview = overview;
     }
 
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setReleaseDate(String release_date) {
+        this.release_date = release_date;
     }
 }
 

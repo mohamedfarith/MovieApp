@@ -52,19 +52,18 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull final MovieListAdapter.ViewHolder viewHolder, int i) {
-        viewHolder.movieName.setText(movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getTitle());
+        String releaseDate = movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getReleaseDate();
+        releaseDate = getReleaseYear(releaseDate);
+        Log.d(TAG, "onBindViewHolder: releasedate is "+releaseDate);
+        viewHolder.movieName.setText(movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getTitle()+" ("+releaseDate+")");
         String uriParse ="https://image.tmdb.org/t/p/w500"+ movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getPosterPath();
         Uri imageUri = Uri.parse(uriParse);
         viewHolder.movieImage.setImageURI(imageUri);
         viewHolder.movieImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                hashMap.put("movieDetails", movieDetails);
                 Intent intent = new Intent(v.getContext(), MovieDescription.class);
-               // Log.d("onBindViewHolder", "onClick: "+movieDetails.getBackDropPath());
-
                 Log.d(TAG, "onClick: "+movieDetailsArrayList.get(viewHolder.getAdapterPosition()).toString());
-
                 intent.putExtra("movieDetails",movieDetailsArrayList.get(viewHolder.getAdapterPosition()));
                 v.getContext().startActivity(intent);
             }
@@ -75,6 +74,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             Log.d(TAG, "onBindViewHolder: bottom reached");
 
         }
+    }
+
+    private String getReleaseYear(String releaseDate) {
+        String[] year = releaseDate.split("-");
+        Log.d(TAG, "getReleaseYear: ");
+        return year[0];
     }
 
     @Override
@@ -90,8 +95,6 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             super(itemView);
             movieName = itemView.findViewById(R.id.movie_name);
             movieImage = itemView.findViewById(R.id.movie_img);
-
-
 
         }
     }
