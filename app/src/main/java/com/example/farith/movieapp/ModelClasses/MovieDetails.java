@@ -4,31 +4,31 @@ import java.io.Serializable;
 import java.util.List;
 
 public class MovieDetails implements Serializable {
-    String voteCount;
+    String vote_count;
     String id;
     String video;
     String vote_average;
     String title;
     String popularity;
     String poster_path;
-    String originalLanguage;
-    String originalTitle;
+    String original_language;
+    String original_title;
     List<String> genreId;
     String backdrop_path;
     String adult;
     String overview;
     String release_date;
 
-    public MovieDetails(String voteCount, String id, String video, String vote_average, String title, String popularity, String poster_path, String originalLanguage, String originalTitle, List<String> genreId, String backDropPath, String adult, String overview,String release_date) {
-        this.voteCount = voteCount;
+    public MovieDetails(String vote_count, String id, String video, String vote_average, String title, String popularity, String poster_path, String original_language, String original_title, List<String> genreId, String backDropPath, String adult, String overview,String release_date) {
+        this.vote_count = vote_count;
         this.id = id;
         this.video = video;
         this.vote_average = vote_average;
         this.title = title;
         this.popularity = popularity;
         this.poster_path = poster_path;
-        this.originalLanguage = originalLanguage;
-        this.originalTitle = originalTitle;
+        this.original_language = original_language;
+        this.original_title = original_title;
         this.genreId = genreId;
         this.backdrop_path = backDropPath;
         this.adult = adult;
@@ -37,7 +37,7 @@ public class MovieDetails implements Serializable {
     }
 
     public String getVoteCount() {
-        return voteCount;
+        return vote_count;
     }
 
     public String getId() {
@@ -65,11 +65,11 @@ public class MovieDetails implements Serializable {
     }
 
     public String getOriginalLanguage() {
-        return originalLanguage;
+        return original_language;
     }
 
     public String getOriginalTitle() {
-        return originalTitle;
+        return original_title;
     }
 
     public List<String> getGenreId() {
@@ -91,8 +91,8 @@ public class MovieDetails implements Serializable {
         return release_date;
     }
 
-    public void setVoteCount(String voteCount) {
-        this.voteCount = voteCount;
+    public void setVoteCount(String vote_count) {
+        this.vote_count = vote_count;
     }
 
     public void setId(String id) {
@@ -119,12 +119,12 @@ public class MovieDetails implements Serializable {
         this.poster_path = posterPath;
     }
 
-    public void setOriginalLanguage(String originalLanguage) {
-        this.originalLanguage = originalLanguage;
+    public void setOriginalLanguage(String original_language) {
+        this.original_language = original_language;
     }
 
-    public void setOriginalTitle(String originalTitle) {
-        this.originalTitle = originalTitle;
+    public void setOriginalTitle(String original_title) {
+        this.original_title = original_title;
     }
 
     public void setGenreId(List<String> genreId) {

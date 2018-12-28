@@ -55,7 +55,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
         String releaseDate = movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getReleaseDate();
         releaseDate = getReleaseYear(releaseDate);
         Log.d(TAG, "onBindViewHolder: releasedate is "+releaseDate);
-        viewHolder.movieName.setText(movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getTitle()+" ("+releaseDate+")");
+        viewHolder.movieName.setText(movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getOriginalTitle()+" ("+releaseDate+")");
         String uriParse ="https://image.tmdb.org/t/p/w500"+ movieDetailsArrayList.get(viewHolder.getAdapterPosition()).getPosterPath();
         Uri imageUri = Uri.parse(uriParse);
         viewHolder.movieImage.setImageURI(imageUri);

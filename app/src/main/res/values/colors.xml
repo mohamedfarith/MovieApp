@@ -7,4 +7,6 @@
     <color name="backgroundWhite">#ffffff</color>
     <color name="heartRed">#e70808</color>
     <color name="collapsedColour">#688dc1</color>
+    <color name="black">#000000</color>
+    <color name="transpatrentBlack">#90000000</color>
 </resources>
