@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "fetchMovieDetails: " + movieDetailsArrayList.size());
             Log.d(TAG, "fetchMovieDetails: " + movieDetails.getBackDropPath());
         }
-        movieListAdapter.notifyDataSetChanged();
+        movieListAdapter.notifyItemRangeChanged(movieDetailsArrayList.size(),20);
         pageNumber++;
     }
 }

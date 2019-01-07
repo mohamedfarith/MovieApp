@@ -21,9 +21,9 @@
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/back_drop_image"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="400dp"
                 android:background="@color/collapsedColour"
-                app:actualImageScaleType="fitXY" />
+                />
             <android.support.v7.widget.Toolbar
                 android:id="@+id/movie_title"
                 android:layout_height="?attr/actionBarSize"

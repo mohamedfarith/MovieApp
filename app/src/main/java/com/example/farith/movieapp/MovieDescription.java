@@ -1,5 +1,6 @@
 package com.example.farith.movieapp;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -10,6 +11,7 @@ import android.os.Build;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,6 +19,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -40,6 +43,8 @@ public class MovieDescription extends AppCompatActivity {
     RecyclerView descriptionRecyclerView;
     CollapsingToolbarLayout collapsingToolbarLayout;
     AppBarLayout appBarLayout;
+    Toolbar toolbar;
+    Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +65,8 @@ public class MovieDescription extends AppCompatActivity {
         favouriteIconDb = new FavouriteIconDb(this);
         getFavIconStatus();
         movieTitle.setTitle(movieDetails.getTitle());
+        setSupportActionBar(movieTitle);
+        this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         favIconButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,6 +78,15 @@ public class MovieDescription extends AppCompatActivity {
         descriptionRecyclerView.setAdapter(adapter);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     public void initializingViews() {
         movieTitle = findViewById(R.id.movie_title);
         backDropImage = findViewById(R.id.back_drop_image);
@@ -80,6 +96,8 @@ public class MovieDescription extends AppCompatActivity {
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.expandedtoolbar);
         descriptionRecyclerView  = findViewById(R.id.description_recycler_view);
         appBarLayout = findViewById(R.id.app_bar);
+
+
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @SuppressLint("RestrictedApi")
             @Override
