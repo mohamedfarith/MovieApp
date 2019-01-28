@@ -6,6 +6,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.NestedScrollView;
@@ -31,13 +32,13 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private String TAG = "MainActivity";
     ConstraintLayout constraintLayout;
     ArrayList<String> title = new ArrayList<>();
     Movies movies;
     MovieDetails movieDetails;
-    ProgressBar progressBar,loadMorePrgressbar;
+    ProgressBar progressBar, loadMorePrgressbar;
     RecyclerView movieListView;
     Context context;
     ArrayList<MovieDetails> movieDetailsArrayList = new ArrayList<>();
@@ -47,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
     Boolean isScrolling = false;
     int pageNumber = 1;
     MovieListAdapter movieListAdapter;
+    FloatingActionButton btnScrollToTop;
+    FloatingActionButton btnScrollToBottom;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fresco.initialize(MainActivity.this);
         setContentView(R.layout.activity_main);
@@ -57,12 +60,23 @@ public class MainActivity extends AppCompatActivity {
         movieListView = findViewById(R.id.movie_list_view);
         progressBar = findViewById(R.id.progress_bar);
         loadMorePrgressbar = findViewById(R.id.load_more_progressbar);
+        btnScrollToTop = findViewById(R.id.btn_scroll_to_top);
+        btnScrollToTop.setOnClickListener(this);
+        btnScrollToBottom = findViewById(R.id.btn_scroll_to_bottom);
+        btnScrollToBottom.setOnClickListener(this);
         loadMorePrgressbar.getIndeterminateDrawable()
                 .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.getIndeterminateDrawable()
                 .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.setVisibility(View.VISIBLE);
+        displayElements();
+
+
+    }
+
+    private void displayElements() {
         if (isNetworkAvailable()) {
+            progressBar.setVisibility(View.VISIBLE);
             linearLayoutManager = new LinearLayoutManager(MainActivity.this);
             movieListView.setLayoutManager(linearLayoutManager);
             movieListAdapter = new MovieListAdapter(context, movieDetailsArrayList);
@@ -70,10 +84,13 @@ public class MainActivity extends AppCompatActivity {
             getDataFromApi(pageNumber);
         } else {
             progressBar.setVisibility(View.INVISIBLE);
-            Snackbar.make(constraintLayout, "No internet Connection", Snackbar.LENGTH_LONG).show();
+            Snackbar.make(constraintLayout, "No internet Connection", Snackbar.LENGTH_INDEFINITE).setAction("Try Again", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    displayElements();
+                }
+            }).show();
         }
-
-
     }
 
     //check network connection
@@ -155,7 +172,18 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "fetchMovieDetails: " + movieDetailsArrayList.size());
             Log.d(TAG, "fetchMovieDetails: " + movieDetails.getBackDropPath());
         }
-        movieListAdapter.notifyItemRangeChanged(movieDetailsArrayList.size(),20);
+        movieListAdapter.notifyItemRangeChanged(movieDetailsArrayList.size(), 20);
         pageNumber++;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_scroll_to_top:
+                movieListView.smoothScrollToPosition(0);
+                break;
+            case R.id.btn_scroll_to_bottom:
+                movieListView.smoothScrollToPosition(movieDetailsArrayList.size()-1);
+        }
     }
 }
