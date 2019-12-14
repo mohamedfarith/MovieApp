@@ -8,14 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="expandedtoolbar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginBottom">30dp</item>
     </style>
 
     <style name="collapsedtoolbar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textStyle">bold</item>
         <item name="android:theme">@color/colorPrimary</item>

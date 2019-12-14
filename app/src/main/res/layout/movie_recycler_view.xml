@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:paddingBottom="5dp">
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp">
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/movie_img"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="200dp"
         android:background="#FFFFFF"
         app:actualImageScaleType="fitXY"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,8 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#90000000"
-       android:paddingTop="8dp"
         android:paddingLeft="8dp"
+        android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:text="@string/text_view"
         android:textColor="#FFFFFF"

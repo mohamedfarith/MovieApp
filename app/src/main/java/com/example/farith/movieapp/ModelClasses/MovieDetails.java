@@ -1,39 +1,64 @@
 package com.example.farith.movieapp.ModelClasses;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 import java.util.List;
 
 public class MovieDetails implements Serializable {
+    @SerializedName("vote_count")
+    @Expose
     String vote_count;
+    @SerializedName("id")
+    @Expose
     String id;
+    @SerializedName("video")
+    @Expose
     String video;
+    @SerializedName("vote_average")
+    @Expose
     String vote_average;
+    @SerializedName("title")
+    @Expose
     String title;
+    @SerializedName("popularity")
+    @Expose
     String popularity;
+    @SerializedName("poster_path")
+    @Expose
     String poster_path;
+    @SerializedName("original_language")
+    @Expose
     String original_language;
+    @SerializedName("original_title")
+    @Expose
     String original_title;
+    @SerializedName("genreId")
+    @Expose
     List<String> genreId;
+    @SerializedName("backdrop_path")
+    @Expose
     String backdrop_path;
+    @SerializedName("adult")
+    @Expose
     String adult;
+    @SerializedName("overview")
+    @Expose
     String overview;
+    @SerializedName("release_date")
+    @Expose
     String release_date;
+    @SerializedName("spoken_languages")
+    @Expose
+    List<SpokenLanguages> spokenLanguages;
 
-    public MovieDetails(String vote_count, String id, String video, String vote_average, String title, String popularity, String poster_path, String original_language, String original_title, List<String> genreId, String backDropPath, String adult, String overview,String release_date) {
-        this.vote_count = vote_count;
-        this.id = id;
-        this.video = video;
-        this.vote_average = vote_average;
-        this.title = title;
-        this.popularity = popularity;
-        this.poster_path = poster_path;
-        this.original_language = original_language;
-        this.original_title = original_title;
-        this.genreId = genreId;
-        this.backdrop_path = backDropPath;
-        this.adult = adult;
-        this.overview = overview;
-        this.release_date=release_date;
+    public List<SpokenLanguages> getSpokenLanguages() {
+        return spokenLanguages;
+    }
+
+    public void setSpokenLanguages(List<SpokenLanguages> spokenLanguages) {
+        this.spokenLanguages = spokenLanguages;
     }
 
     public String getVoteCount() {
@@ -87,6 +112,7 @@ public class MovieDetails implements Serializable {
     public String getOverview() {
         return overview;
     }
+
     public String getReleaseDate() {
         return release_date;
     }
@@ -145,6 +171,20 @@ public class MovieDetails implements Serializable {
 
     public void setReleaseDate(String release_date) {
         this.release_date = release_date;
+    }
+
+    public static class SpokenLanguages {
+        @SerializedName("name")
+        @Expose
+        String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
 

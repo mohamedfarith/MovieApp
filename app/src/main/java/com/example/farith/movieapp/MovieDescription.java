@@ -1,4 +1,5 @@
 package com.example.farith.movieapp;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -23,11 +24,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
 
 import com.example.farith.movieapp.Adapters.MovieDescriptionAdapter;
 import com.example.farith.movieapp.ModelClasses.MovieDetails;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MovieDescription extends AppCompatActivity {
     Toolbar movieTitle;
@@ -44,7 +52,7 @@ public class MovieDescription extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     AppBarLayout appBarLayout;
     Toolbar toolbar;
-    Context mContext;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +67,30 @@ public class MovieDescription extends AppCompatActivity {
         }
         Intent intent = getIntent();
         movieDetails = (MovieDetails) intent.getSerializableExtra("movieDetails");
+        makeNetworkCall(movieDetails);
+
+
+    }
+
+    private void makeNetworkCall(final MovieDetails movieDetails) {
+        progressBar.setVisibility(View.VISIBLE);
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(Constants.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        MovieApi movieApi = retrofit.create(MovieApi.class);
+        movieApi.getDetails(movieDetails.getId(), Constants.API_KEY).enqueue(new Callback<MovieDetails>() {
+            @Override
+            public void onResponse(Call<MovieDetails> call, Response<MovieDetails> response) {
+                progressBar.setVisibility(View.GONE);
+                bindData(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<MovieDetails> call, Throwable t) {
+                progressBar.setVisibility(View.GONE);
+            }
+        });
+    }
+
+    private void bindData(MovieDetails movieDetails) {
         Log.d(TAG, "onCreate: the bundle value is " + movieDetails.getBackDropPath());
         backdropPath = "https://image.tmdb.org/t/p/original" + movieDetails.getBackDropPath();
         loadImageUri();
@@ -78,9 +110,10 @@ public class MovieDescription extends AppCompatActivity {
         descriptionRecyclerView.setAdapter(adapter);
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
         }
@@ -94,19 +127,20 @@ public class MovieDescription extends AppCompatActivity {
         collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.collapsedtoolbar);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.expandedtoolbar);
-        descriptionRecyclerView  = findViewById(R.id.description_recycler_view);
+        descriptionRecyclerView = findViewById(R.id.description_recycler_view);
         appBarLayout = findViewById(R.id.app_bar);
+        progressBar = findViewById(R.id.progressBar);
 
 
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @SuppressLint("RestrictedApi")
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
-                if(i>400){
+                if (i > 400) {
                     favIconButton.setVisibility(View.INVISIBLE);
-                }else{
+                } else {
                     favIconButton.setVisibility(View.VISIBLE);
-               //     switchColor();
+                    //     switchColor();
                 }
             }
         });

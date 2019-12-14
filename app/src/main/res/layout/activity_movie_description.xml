@@ -16,12 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:contentScrim="@color/colorPrimary"
+            app:collapsedTitleGravity="left"
             app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
 
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/back_drop_image"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                app:actualImageScaleType="fitXY"
+                android:layout_height="300dp"
                 android:background="@color/collapsedColour"
                 />
             <android.support.v7.widget.Toolbar
@@ -54,6 +57,12 @@
         android:layout_marginTop="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
     </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

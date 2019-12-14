@@ -1,6 +1,7 @@
 package com.example.farith.movieapp;
 
 import android.content.Context;
+import android.graphics.Movie;
 import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -32,12 +33,11 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     ConstraintLayout constraintLayout;
     ArrayList<String> title = new ArrayList<>();
     Movies movies;
-    MovieDetails movieDetails;
     ProgressBar progressBar, loadMorePrgressbar;
     RecyclerView movieListView;
     Context context;
@@ -60,10 +60,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         movieListView = findViewById(R.id.movie_list_view);
         progressBar = findViewById(R.id.progress_bar);
         loadMorePrgressbar = findViewById(R.id.load_more_progressbar);
-        btnScrollToTop = findViewById(R.id.btn_scroll_to_top);
-        btnScrollToTop.setOnClickListener(this);
-        btnScrollToBottom = findViewById(R.id.btn_scroll_to_bottom);
-        btnScrollToBottom.setOnClickListener(this);
         loadMorePrgressbar.getIndeterminateDrawable()
                 .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
         progressBar.getIndeterminateDrawable()
@@ -103,23 +99,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //making network call to the movie db api
     public void getDataFromApi(int number) {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(MovieApi.BASE_URL)
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         MovieApi movieApi = retrofit.create(MovieApi.class);
 
-        Call<Movies> call = movieApi.getMovieDetails(number);
+        Call<Movies> call = movieApi.getMovieDetails(Constants.API_KEY, number, "revenue.desc");
         call.enqueue(new Callback<Movies>() {
             @Override
             public void onResponse(Call<Movies> call, Response<Movies> response) {
                 Log.d(TAG, "onResponse: " + response.toString());
-                movies = response.body();
-                final String page = movies.getPage();
-                if (!page.equals("")) {
-                    Log.d(TAG, "into movies obj: " + page);
-                    fetchMovieDetails();
-                    progressBar.setVisibility(View.INVISIBLE);
-                    loadMorePrgressbar.setVisibility(View.GONE);
+                if (response.body() != null) {
+                    final String page = response.body().getPage();
+                    if (!page.equals("")) {
+                        Log.d(TAG, "into movies obj: " + page);
+                        addMovieDetails(response.body());
+                        progressBar.setVisibility(View.INVISIBLE);
+                        loadMorePrgressbar.setVisibility(View.GONE);
+                    }
                 }
 
                 movieListView.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -163,27 +160,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     //getting the values of the response from api
-    public void fetchMovieDetails() {
+    public void addMovieDetails(Movies movies) {
         int size = movies.getResults().size();
+        ArrayList<MovieDetails> movieDetails = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             Log.d(TAG, "fetchMovieDetails: ");
-            movieDetails = movies.getResults().get(i);
-            movieDetailsArrayList.add(movieDetails);
+            movieDetails.add(movies.getResults().get(i));
             Log.d(TAG, "fetchMovieDetails: " + movieDetailsArrayList.size());
-            Log.d(TAG, "fetchMovieDetails: " + movieDetails.getBackDropPath());
+            Log.d(TAG, "fetchMovieDetails: " + movies.getResults().get(i).getBackDropPath());
         }
+        movieDetailsArrayList.addAll(movieDetails);
         movieListAdapter.notifyItemRangeChanged(movieDetailsArrayList.size(), 20);
         pageNumber++;
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_scroll_to_top:
-                movieListView.smoothScrollToPosition(0);
-                break;
-            case R.id.btn_scroll_to_bottom:
-                movieListView.smoothScrollToPosition(movieDetailsArrayList.size()-1);
-        }
-    }
 }

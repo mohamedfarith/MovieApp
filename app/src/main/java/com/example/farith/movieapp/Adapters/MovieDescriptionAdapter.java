@@ -47,7 +47,11 @@ public class MovieDescriptionAdapter extends RecyclerView.Adapter<DescriptionVie
         movieDescription.setText(movieDetails.getOverview());
         txtRating.setText(movieDetails.getVoteverage());
         ratingCount.setText(movieDetails.getVoteCount());
-        spokenLanguage.setText(movieDetails.getOriginalLanguage());
+        String value = "";
+        for (MovieDetails.SpokenLanguages language : movieDetails.getSpokenLanguages()) {
+            value = value + " " + language.getName();
+        }
+        spokenLanguage.setText(value);
     }
 
     @Override
