@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03306f</color>
+    <color name="colorPrimaryDark">#000d57</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textBlack">#767e80</color>
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="heartRed">#e70808</color>
+    <color name="collapsedColour">#688dc1</color>
+    <color name="black">#000000</color>
+    <color name="transpatrentBlack">#90000000</color>
+    <color name="transparentWhite">#f4f9f8</color>
+</resources>
