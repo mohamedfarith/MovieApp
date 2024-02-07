@@ -1,19 +1,15 @@
 package com.example.farith.movieapp.Adapters;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.farith.movieapp.ModelClasses.MovieDetails;
 import com.example.farith.movieapp.R;
-import com.facebook.drawee.view.SimpleDraweeView;
-
-import java.util.ArrayList;
 
 public class MovieDescriptionAdapter extends RecyclerView.Adapter<DescriptionViewHolder> {
     TextView ratingCount;

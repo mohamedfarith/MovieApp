@@ -1,29 +1,32 @@
 package com.example.farith.movieapp;
 
 import android.content.Context;
-import android.graphics.Movie;
 import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ProgressBar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.farith.movieapp.Adapters.MovieListAdapter;
 import com.example.farith.movieapp.ModelClasses.MovieDetails;
 import com.example.farith.movieapp.ModelClasses.Movies;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.imagepipeline.core.ImagePipeline;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
+import com.facebook.imagepipeline.core.ImagePipelineExperiments;
+import com.facebook.imagepipeline.core.ImageTranscoderType;
+import com.facebook.imagepipeline.core.MemoryChunkType;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -54,7 +57,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fresco.initialize(MainActivity.this);
+        ImagePipelineConfig pipeline = ImagePipelineConfig.newBuilder(this)
+                .setMemoryChunkType(MemoryChunkType.BUFFER_MEMORY)
+                .setImageTranscoderType(ImageTranscoderType.JAVA_TRANSCODER)
+                .build();
+        Fresco.initialize(MainActivity.this,pipeline);
         setContentView(R.layout.activity_main);
         constraintLayout = findViewById(R.id.constraint_layout);
         movieListView = findViewById(R.id.movie_list_view);
